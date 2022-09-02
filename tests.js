@@ -101,6 +101,7 @@ describe("Quote App", () => {
     expect(output).to.contain('Anonymous')
   })
   it('should add multiple quotes to file', async () => {
+    
     for (const {quote, author} of quotes) {
       await addQuote(quote, author)
     }
